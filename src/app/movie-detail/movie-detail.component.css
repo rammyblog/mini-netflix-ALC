@@ -36,3 +36,28 @@
   clear: both;
   margin-top: 10px;
 }
+
+
+@media(max-width: 700px){
+  .movie_detail_grid {
+    display: block;
+    text-align: left;
+  }
+
+
+  .genre-span {
+    background: #192032;
+    border: 1px solid #7d8872;
+    border-radius: 5px;
+    padding: 0px 10px;
+    height: 28px;
+    width: max-content;
+
+    margin: 0 10px 0.75rem 0.75rem;
+  }
+
+  .inline-paragraph {
+    display: inline-block;
+  }
+
+}
