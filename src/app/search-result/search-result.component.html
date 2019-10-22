@@ -2,6 +2,7 @@
 <section class="movies_list">
   <div class="container">
     <h2 class="search-query">Showing search Results For: "{{movieQuery}}"</h2>
+    <div *ngIf="movies$">
         <div class="movies-list card-deck_margin">
             <div class="box" *ngFor="let movie of movies$">
             <div class="card mb-3" style="max-width: 540px;">
@@ -26,7 +27,8 @@
                     </div>
                     </div>
                   </div>
-
+        </div>
+        <h2 style="color: #fff">No result found</h2>
           </div>
         </div>
 </section>
