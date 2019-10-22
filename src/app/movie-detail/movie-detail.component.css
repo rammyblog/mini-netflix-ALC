@@ -1,0 +1,38 @@
+
+.movie_detail_section{
+  margin: 20px;
+}
+.movie_detail_grid{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 30px;
+}
+
+.movie_detail{
+  color: #fff
+}
+
+.movie_detail{
+  padding: 10px;
+}
+
+.movie_title{
+  display: inline;
+}
+
+.fav_icon{
+  float: right;
+  color: red;
+}
+
+.default_fav_icon{
+
+  float: right;
+  color: #fff;
+
+}
+
+.movie_details_breakdown{
+  clear: both;
+  margin-top: 10px;
+}

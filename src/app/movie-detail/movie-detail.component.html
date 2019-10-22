@@ -1,0 +1,41 @@
+
+    <section class="movie_detail_section">
+        <div class="container">
+            <div class="movie_detail_grid">
+                <div class="movie_image">
+                    <div class="text-center">
+                        <img
+                        *ngIf= " movie.posterurl == ''; else elseBlock "
+                        [src]="defaultImageUrl"  class="img-fluid" alt="{{movie.title}}">
+                        <ng-template #elseBlock>
+                            <img
+
+                            [src]="movie.posterurl"  class="img-fluid" alt="{{movie.title}}">
+                        </ng-template>
+
+                    </div>
+                </div>
+
+                <div class="movie_detail">
+                    <h2 class="movie_title">{{movie.title}}</h2> <span [ngClass]="favStatus ? 'fav_icon' : 'default_fav_icon'"
+                     (click)="favMovie(movie.id)" ><i class="fas fa-heart"></i></span>
+                    <div class="movie_details_breakdown">
+
+                    <p>Year: {{movie.year}}</p>
+                    <p>Genres: <span class="genre-span" *ngFor="let genre of movie.genres">{{genre}}</span></p>
+                    <p>Actors: <span class="genre-span" *ngFor="let actor of movie.actors">{{actor}}</span></p>
+                    <p>Average Rating: {{avgRating}}</p>
+                    <p>IMDB Rating: {{movie.imdbRating}}</p>
+                    <p>Duration: {{movie.duration}}</p>
+                    <p>Release Date: {{movie.releaseDate}}</p>
+                    <p>Movie Summary: {{movie.storyline}} </p>
+                </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+</section>
+
