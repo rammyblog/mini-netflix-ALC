@@ -9,6 +9,8 @@
   border: none;
   border-radius: 1%;
   margin-bottom: 20px;
+  margin-bottom: 150px;
+  height: 500px;
 }
 
 .box-text{
@@ -31,18 +33,27 @@ p{
 }
 .movies-list{
   display: grid;
-  grid-template-columns: repeat(3, minmax(100px, auto))  ;
+  grid-template-columns: repeat(3, 1fr)  ;
   grid-gap: 10px;
   margin-top: 20px;
   justify-content: center;
   align-items: center;
 }
 
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 @media(max-width: 600px){
 
   .movies-list{
   grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+
+  .box{
+    margin-bottom: 20px;
   }
 }
 
@@ -50,5 +61,8 @@ p{
 
   .movies-list{
     display: block;
+  }
+  .box{
+    margin-bottom: 20px;
   }
 }

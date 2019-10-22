@@ -3,7 +3,7 @@
     <div *ngIf="favMovies">
         <div class="movies-list card-deck_margin">
             <div class="box" *ngFor="let movie of favMovies">
-              <div class="text-center">
+
                 <img
                 *ngIf= " movie.posterurl == ''; else elseBlock "
                 [src]="defaultImageUrl"  class="img-fluid" alt="{{movie.title}}">
@@ -13,7 +13,7 @@
                     [src]="movie.posterurl"  class="img-fluid" alt="{{movie.title}}">
                 </ng-template>
 
-              </div>
+
                 <div class="box-body">
                 <a routerLink="/movies/{{movie.id}}"><p class="box-title">{{movie.title}}</p></a>
                 <span class="genre-span">{{movie.year}}</span>
