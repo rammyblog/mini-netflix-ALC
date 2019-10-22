@@ -45,3 +45,10 @@ p{
   grid-template-columns: repeat(2, minmax(100px, 1fr));
   }
 }
+
+@media(max-width: 500px){
+
+  .movies-list{
+    display: block;
+  }
+}
