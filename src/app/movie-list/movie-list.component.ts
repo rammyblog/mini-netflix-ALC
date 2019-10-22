@@ -16,6 +16,9 @@ export class MovieListComponent implements OnInit {
   defaultImageUrl = "https://dummyimage.com/337x500/f9f9f9/000000.png&text=No+Image"
 
   selectedMovie: Movie;
+  page = 1;
+  pageSize = 6;
+
 
   ngOnInit() {
     this.getMovies();

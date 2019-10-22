@@ -1,8 +1,7 @@
 <section class="movies_list">
     <div class="container">
           <div class="movies-list card-deck_margin">
-              <div class="box" *ngFor="let movie of movies" (click)="onSelect(movie)">
-
+              <div class="box" *ngFor="let movie of movies | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize" (click)="onSelect(movie)">
                   <img
                   *ngIf= " movie.posterurl == ''; else elseBlock "
                   [src]="defaultImageUrl"  class="img-fluid" alt="{{movie.title}}">
@@ -17,7 +16,10 @@
                   <span class="genre-span">{{movie.year}}</span>
                   </div>
                 </div>
+
             </div>
+            <ngb-pagination class="ng-pagination-custom" [collectionSize]="movies.length" [(page)]="page" [pageSize]="pageSize" [boundaryLinks]="true" ></ngb-pagination>
+
           </div>
 </section>
 <router-outlet></router-outlet>

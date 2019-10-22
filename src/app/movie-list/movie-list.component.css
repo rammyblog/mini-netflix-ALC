@@ -46,6 +46,28 @@ img{
   object-fit: cover;
 }
 
+.ng-pagination-custom{
+    justify-content: center;
+    display: flex;
+}
+
+.ng-pagination-custom .pagination {
+
+	justify-content: center;
+}
+.page-link {
+
+	background: #131929 !important;
+	color: #fff !important;
+}
+
+.ng-pagination-custom .page-item.disabled .page-link{
+
+	background: #131929 !important;
+}
+
+
+
 @media(max-width: 600px){
 
   .movies-list{
@@ -59,5 +81,16 @@ img{
   .movies-list{
     display: block;
   }
+
+  img {
+
+    object-fit: contain;
+  }
+
+  .box {
+    height: 321px;
+  }
+
+
 
 }

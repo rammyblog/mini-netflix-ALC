@@ -15,6 +15,7 @@ import { MoviePipe } from './remove-spaces.pipe';
 import { StorageServiceModule } from  'ngx-webstorage-service';
 import { LocalStorageService } from './local-storage.service';
 import { FavouriteMoviesComponent } from './favourite-movies/favourite-movies.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { FavouriteMoviesComponent } from './favourite-movies/favourite-movies.co
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    NgbModule,
 
 
 // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
