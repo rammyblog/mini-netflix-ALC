@@ -1,5 +1,6 @@
 <section class="movies_list">
   <div class="container">
+    <div *ngIf="favMovies">
         <div class="movies-list card-deck_margin">
             <div class="box" *ngFor="let movie of favMovies">
               <div class="text-center">
@@ -19,6 +20,11 @@
                 </div>
               </div>
           </div>
+        </div>
+        <div *ngIf="!favMovies">
+          <h2 style="color: #fff">You do not have any favourite movie listed</h2>
+
+        </div>
         </div>
 </section>
 <router-outlet></router-outlet>
