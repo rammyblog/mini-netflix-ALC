@@ -28,8 +28,9 @@
                     </div>
                   </div>
         </div>
-        <h2 style="color: #fff">No result found</h2>
           </div>
+
+        <h2 *ngIf="movies$.length == 0" style="color: #fff">No result found</h2>
         </div>
 </section>
 

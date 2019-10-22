@@ -32,14 +32,9 @@ export class LocalStorageService {
 
     public deleteFromLocalStorage(id: number): void {
       console.log('Removing');
-
       const currentFavs = this.storage.get(STORAGE_KEY) || [];
 
-      // if(currentFavs.find( id => {
-
-      // } )
-
-      var index = currentFavs.indexOf(id);
+      var index = currentFavs.indexOf(+id);
       if (index > -1) {
           currentFavs.splice(index, 1);
       }

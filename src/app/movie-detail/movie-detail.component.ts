@@ -76,11 +76,7 @@ export class MovieDetailComponent implements OnInit {
         }
 
         if(!this.favStatus){
-
           this.localStorageService.deleteFromLocalStorage(movieid);
-
-
-
 
         }
 
