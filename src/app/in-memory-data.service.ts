@@ -64,62 +64,7 @@ export class InMemoryDataService implements InMemoryDbService {
         'imdbRating': '',
         'posterurl': 'https://images-na.ssl-images-amazon.com/images/M/MV5BMjQxMDE5NDg0NV5BMl5BanBnXkFtZTgwNTA5MDE2NDM@._V1_SY500_CR0,0,337,500_AL_.jpg'
     },
-    {
-        'id': '2',
-        'title': 'Area X: Annihilation',
-        'year': '2018',
-        'genres': [
-            'Adventure',
-            'Drama',
-            'Fantasy'
-        ],
-        'ratings': [
-            2,
-            6,
-            2,
-            3,
-            9,
-            5,
-            3,
-            10,
-            6,
-            7,
-            3,
-            1,
-            6,
-            6,
-            1,
-            7,
-            8,
-            8,
-            7,
-            2,
-            3,
-            2,
-            10,
-            4,
-            9,
-            8,
-            2,
-            2,
-            6,
-            3
-        ],
-        'poster': 'MV5BMTk2Mjc2NzYxNl5BMl5BanBnXkFtZTgwMTA2OTA1NDM@._V1_SY500_CR0,0,320,500_AL_.jpg',
-        'contentRating': 'R',
-        'duration': '',
-        'releaseDate': '2018-02-23',
-        'averageRating': 0,
-        'originalTitle': 'Annihilation',
-        'storyline': 'A biologist\'s husband disappears. She puts her name forward for an expedition into an environmental disaster zone, but does not find what she\'s expecting. The expedition team is made up of the biologist, an anthropologist, a psychologist, a surveyor, and a linguist.',
-        'actors': [
-            'Tessa Thompson',
-            'Jennifer Jason Leigh',
-            'Natalie Portman'
-        ],
-        'imdbRating': '',
-        'posterurl': 'https://images-na.ssl-images-amazon.com/images/M/MV5BMTk2Mjc2NzYxNl5BMl5BanBnXkFtZTgwMTA2OTA1NDM@._V1_SY500_CR0,0,320,500_AL_.jpg'
-    },
+
     {
         'id': '3',
         'title': 'Hannah',

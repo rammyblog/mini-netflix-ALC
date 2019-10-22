@@ -37,3 +37,11 @@ p{
   justify-content: center;
   align-items: center;
 }
+
+
+@media(max-width: 600px){
+
+  .movies-list{
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+}
