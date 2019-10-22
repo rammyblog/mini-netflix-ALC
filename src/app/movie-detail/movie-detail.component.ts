@@ -14,6 +14,8 @@ export class MovieDetailComponent implements OnInit {
 
    movie: Movie;
    avgRating;
+  defaultImageUrl = "https://dummyimage.com/337x500/f9f9f9/000000.png&text=No+Image"
+
   //  favMoviesId: any[];
    favStatus = false;
 
